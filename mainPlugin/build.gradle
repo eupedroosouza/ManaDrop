@@ -4,33 +4,34 @@ plugins {
     id 'java-gradle-plugin'
 }
 
-version = '0.4.2'
+version = '0.4.4'
 
 dependencies {
     implementation gradleApi()
     shadow 'com.github.carleslc:simple-yaml:1.4.1'
+    shadow 'net.md-5:SpecialSource:1.11.0'
     shadow project(':util')
 }
 
 gradlePlugin {
+
     plugins {
         manadrop {
-            id = 'fr.il_totore.manadrop'
+            id = 'io.github.eupedroosouza.fr.il_totore.manadrop'
             implementationClass = 'fr.il_totore.manadrop.ManaDrop'
         }
     }
 }
 
 pluginBundle {
-    ext['gradle.publish.key'] = System.getenv('gradle.publish.key')
-    ext['gradle.publish.secret'] = System.getenv('gradle.publish.secret')
-    website = 'https://github.com/Iltotore/ManaDrop'
-    vcsUrl = 'https://github.com/Iltotore/ManaDrop'
-    description = 'A Gradle plugin for Minecraft Development'
-    tags = ['minecraft', 'spigot', 'bungeecord']
+    website = 'https://github.com/eupedroosouza/ManaDrop'
+    vcsUrl = 'https://github.com/eupedroosouza/ManaDrop'
     plugins {
         manadrop {
             displayName = 'ManaDrop'
+            description = 'Gradle plugin that helps Minecraft developers automate tasks and make plugins more portable.'
+            version = project.version
+            tags = Arrays.asList('minecraft', 'spigot', 'remap', 'specialsource', 'bungeecord')
         }
     }
 }

@@ -6,6 +6,7 @@ import fr.il_totore.manadrop.spigot.SpigotExtension;
 import fr.il_totore.manadrop.spigot.task.BuildSpigot;
 import fr.il_totore.manadrop.spigot.task.BuildTools;
 import fr.il_totore.manadrop.task.CheckYaml;
+import io.github.patrick.gradle.remapper.tasks.RemapTask;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
 
@@ -21,6 +22,8 @@ public class ManaDrop implements Plugin<Project> {
         buildTools.setGroup("spigot");
         BuildSpigot buildSpigot = project.getTasks().create("spigotPlugin", BuildSpigot.class);
         buildSpigot.setGroup("spigot");
+        RemapTask remapTask = project.getTasks().create("remapJar", RemapTask.class);
+        remapTask.setGroup("remap");
 
         project.getExtensions().create("spigot", SpigotExtension.class, project);
 

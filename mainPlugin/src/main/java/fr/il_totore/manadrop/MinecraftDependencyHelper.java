@@ -22,6 +22,10 @@ public class MinecraftDependencyHelper {
         return "net.md-5:bungeecord-api:" + version + "-SNAPSHOT";
     }
 
+    public static String remappedSpigot(String version){
+        return "org.spigotmc:spigot:" + version + "-R0.1-SNAPSHOT:remapped-mojang";
+    }
+
     private static String getPaperGroup(String version) {
         int majorVersion = Integer.parseInt(version.split("\\.")[1]);
         return majorVersion >= 16 ? "io.papermc.paper" : "com.destroystokyo.paper";

@@ -3,13 +3,12 @@ plugins {
 }
 
 
-
 allprojects {
 
     apply plugin: 'java'
     apply plugin: 'com.github.johnrengelman.shadow'
 
-    group 'fr.il_totore'
+    group 'io.github.eupedroosouza.fr.il_totore.'
 
     sourceCompatibility = 1.8
 
