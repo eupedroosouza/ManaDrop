@@ -1,9 +1,5 @@
 ![banner](logo/banner.png)
 ![Build badge](https://img.shields.io/github/actions/workflow/status/eupedroosouza/ManaDrop/gradle.yml?branch=master)
-
-[//]: # ([![Codacy Badge]&#40;https://api.codacy.com/project/badge/Grade/9af1fd09f7514581a0c2d900c176d50c&#41;]&#40;https://www.codacy.com/manual/Iltotore/ManaDrop?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Iltotore/ManaDrop&amp;utm_campaign=Badge_Grade&#41;)
-
-[//]: # ([![Known Vulnerabilities]&#40;https://snyk.io/test/github/Iltotore/ManaDrop/badge.svg?targetFile=build.gradle&#41;]&#40;https://snyk.io/test/github/Iltotore/ManaDrop?targetFile=build.gradle&#41;)
 ![License Badge](https://img.shields.io/github/license/eupedroosouza/ManaDrop)
 ![Release badge](https://img.shields.io/github/v/release/eupedroosouza/ManaDrop?include_prereleases)
 
@@ -50,3 +46,8 @@ Check the latest available version [here](https://plugins.gradle.org/plugin/io.g
 #### 0.4.4
 - BuildTools now accepts arguments.
 - ManaDrop has been merged with mojang-spigot-remapper and now has a NMS remapping system.
+
+
+[//]: # ([![Codacy Badge]&#40;https://api.codacy.com/project/badge/Grade/9af1fd09f7514581a0c2d900c176d50c&#41;]&#40;https://www.codacy.com/manual/Iltotore/ManaDrop?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Iltotore/ManaDrop&amp;utm_campaign=Badge_Grade&#41;)
+
+[//]: # ([![Known Vulnerabilities]&#40;https://snyk.io/test/github/Iltotore/ManaDrop/badge.svg?targetFile=build.gradle&#41;]&#40;https://snyk.io/test/github/Iltotore/ManaDrop?targetFile=build.gradle&#41;)
